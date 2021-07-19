@@ -1,2 +1,4 @@
 # portfolio
-iM's portfolio
+This is iM's portfolio.
+
+これはiMのポートフォリオです。
