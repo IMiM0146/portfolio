@@ -41,11 +41,14 @@ li {
 
 .section {
   padding: 90px 0;
+  background-color: #f7f7f7;
 }
 
+/*
 .section:nth-of-type(odd) {
   background-color: #f7f7f7;
 }
+*/
 
 .inner {
   max-width: 1340px;
@@ -150,6 +153,7 @@ li {
 
 .main-visual-inner {
   padding: 0 40px;
+  margin-top: 150px;
 }
 
 .main-visual-title {
@@ -158,6 +162,7 @@ li {
   line-height: 1.2;
   margin-bottom: 5px;
   letter-spacing: .1em;
+  color: #fff;
 }
 .main-visual-subtitle {
   font-size: 20px;
@@ -165,6 +170,11 @@ li {
   line-height: 1;
   margin-bottom: 40px;
   letter-spacing: .08em;
+  color: #fff;
+}
+
+.main-visual-text {
+  color: #fff;
 }
 
 /*--------------------------------
@@ -477,3 +487,38 @@ li {
     padding: 50px 0;
   }
 }
+
+/* 新規追加 */
+
+/* https://www.webcreatorbox.com/tech/video-background */
+/* https://beginners-high.com/background-movie/ */
+#bg-video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url('poster.jpg') no-repeat;
+  background-size: cover;
+ }
+
+ .wrap{
+  height: 100vh;
+  background: radial-gradient(rgba(0, 0, 0, 1) 5%,rgba(0, 0, 0, 0.2) 70%);
+ }
+
+ .header-title{
+  position: relative; /*必ず必要*/
+  z-index: 2; /*必ず必要*/
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  margin: auto;
+ }
+
+ 
